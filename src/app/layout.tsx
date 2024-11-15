@@ -32,9 +32,11 @@ export default function RootLayout({
       >
         <SidebarProvider>
           <AppSidebar />
-          <main>
+          <main className=" bg-sky-400">
             <SidebarTrigger />
-            {children}
+            <div className="grid bg-sky-700">
+              {children}
+            </div>
           </main>
         </SidebarProvider>
       </body>
